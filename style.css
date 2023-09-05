@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header
+{
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://lp-cms-production.imgix.net/2019-06/75243789.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+nav{
+    width: 100%;
+    background-color: rgb(19, 0, 41);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.logo
+{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+.logo img
+{
+    width: 50px;
+    height: 50px;
+}
+.logo h4
+{
+    color: darkcyan;
+    font-family: 'Black Ops One', cursive;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-left: 10px;
+}
+.menu{
+    width: 50%;
+}
+.menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu ul li {
+    list-style-type: none;
+}
+.menu ul li a
+{
+    text-decoration: none;
+    color: darkgoldenrod;
+    font-family: 'Acme', sans-serif;
+    font-size: 20px;
+}
+section
+{
+    width: 100%;
+    height: 90vh;
+    color:black;
+    font-family: 'Yatra One', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section h3
+{
+    font-size: 35px;
+    color: rgb(80, 0, 0); 
+    letter-spacing: 2px;
+}
+section h1
+{
+    margin: 30px 0 20px 0;
+    font-size: 60px;
+    text-transform: uppercase;
+    color: rgb(80, 0, 0);
+    letter-spacing: 1.5px;
+}
+section p 
+{
+    font-size: 25px;
+    color: rgb(80, 0, 0);
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.button
+{
+    margin-top: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+.btn1
+{
+    width: 250px;
+    font-size: 20px;
+    color: black;
+    background-color: rgb(2, 155, 78);
+    cursor: pointer; 
+    text-decoration: none;
+    padding: 5px 5px;
+    border:none;
+    border-radius: 3px;
+    outline: none;
+    letter-spacing: 1px;
+}
+.btn1:hover
+{
+    background-color: rgb(68, 0, 255);
+    text-decoration: underline;
+}
+.btn2
+{
+    width: 250px;
+    font-size: 20px;
+    color: black;
+    background-color: rgb(181, 248, 228);
+    cursor: pointer; 
+    text-decoration: none;
+    padding: 5px 5px;
+    border:none;
+    border-radius: 3px;
+    outline: none;
+    letter-spacing: 1px;
+}
+.btn2:hover
+{
+    background-color: rgb(68, 0, 255);
+    text-decoration: underline;
+}
+.change_content::after{
+    content: "";
+    animation: changetext 5s infinite linear;
+    color: rgb(238, 77, 3);
+}
+
+@keyframes changetext {
+    0%
+    {
+        content: "Tamilnadu";
+    }
+    20%
+    {
+        content: "Kerala";
+    }
+    40%
+    {
+        content: "Banglore";
+    }
+    60%
+    {
+        content: "Hyderabhad";
+    }
+    80%
+    {
+        content: "Delhi";
+    }
+    100%
+    {
+        content: "Kashmir";
+    }
+}
